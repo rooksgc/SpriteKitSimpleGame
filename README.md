@@ -1,4 +1,4 @@
-# SpriteKitSimpleGame
+# Gendalf against all
 
 A simple SpriteKit based game, where Gendalf protects against monsters
 
