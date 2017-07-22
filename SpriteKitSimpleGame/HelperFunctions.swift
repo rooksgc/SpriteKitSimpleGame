@@ -1,9 +1,9 @@
 //
 //  Common.swift
-//  SpriteKitSimpleGame
+//  Gendalf against all
 //
 //  Created by Rooksgc on 22.07.17.
-//  Copyright © 2017 Антон Шестаков. All rights reserved.
+//  Copyright © 2017 Rooksgc. All rights reserved.
 //
 
 import SpriteKit
