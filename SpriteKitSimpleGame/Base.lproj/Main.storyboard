@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="39T-Uw-Leq">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="SpriteKitSimpleGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8aa-yV-Osq"/>
+                        <viewControllerLayoutGuide type="bottom" id="qHh-Mt-9TT"/>
+                    </layoutGuides>
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1014" y="81"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ape-sk-hZF">
+            <objects>
+                <viewController id="39T-Uw-Leq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JRB-ik-gv4"/>
+                        <viewControllerLayoutGuide type="bottom" id="5dX-eh-YMq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Oh-8c-ycE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hdr-7l-yi8">
+                                <rect key="frame" x="133" y="403" width="109" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="109" id="7V4-ZB-zba"/>
+                                    <constraint firstAttribute="height" constant="30" id="ZUO-xY-Cvp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BV1-FR-VrT" kind="popoverPresentation" identifier="startGame" popoverAnchorView="Hdr-7l-yi8" id="c5c-5r-pEX">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZL0-Bf-h9x">
+                                <rect key="frame" x="-13" y="244" width="400" height="116"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="116" id="913-4Y-OrO"/>
+                                    <constraint firstAttribute="width" constant="400" id="Yj6-07-EPo"/>
+                                </constraints>
+                                <string key="text">Welcome to the game "Gandalf against all!" Fight off all attacks of opponents with the help of powerful Gandalf`s spells! Pass the levels to open a new weapon.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="ZL0-Bf-h9x" firstAttribute="centerY" secondItem="4Oh-8c-ycE" secondAttribute="centerY" constant="-31.5" id="Aqj-p4-j1o"/>
+                            <constraint firstItem="ZL0-Bf-h9x" firstAttribute="centerX" secondItem="4Oh-8c-ycE" secondAttribute="centerX" constant="-0.5" id="Fa7-U9-gMM"/>
+                            <constraint firstItem="Hdr-7l-yi8" firstAttribute="centerX" secondItem="4Oh-8c-ycE" secondAttribute="centerX" id="N7U-GT-33s"/>
+                            <constraint firstItem="Hdr-7l-yi8" firstAttribute="top" secondItem="ZL0-Bf-h9x" secondAttribute="bottom" constant="43" id="a52-ky-KK2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5pN-vQ-kwU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245.59999999999999" y="80.50974512743629"/>
+        </scene>
+    </scenes>
+</document>
